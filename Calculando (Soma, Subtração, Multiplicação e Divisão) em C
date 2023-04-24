@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    
+    int n1;
+    int n2;
+    int adicao;
+    int subtracao;
+    int multiplicacao;
+    int divisao;
+    
+    
+    printf("---- Calculando <3 ----\n");
+    printf("Digite o 1º Número:");
+    scanf("%i", &n1);
+    printf("Digite o 2º Número:");
+    scanf("%i", &n2);
+    
+    printf("----RESULTADO DOS CALCULOS---- ");
+    adicao=n1+n2;
+    printf("\nResultado da Adição: %i",adicao);
+    subtracao=n1-n2;
+    printf("\nResultado da Subtração: %i ", subtracao);
+    multiplicacao=n1*n2;
+    printf("\nResultado da Multiplicacão: %i", multiplicacao);
+    divisao=n1/n2; 
+    printf("\nResultado da Divisão: %i", divisao);
+
+    
+
+    return 0;
+}
