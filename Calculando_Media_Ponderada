@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int
+main ()
+{
+
+  float nota1;
+  float nota2;
+  float nota3;
+  float media;
+  float peso1;
+  float peso2;
+  float peso3;
+
+
+  printf ("----MC)dia Ponderada----\n");
+
+  printf ("\nDigite Nota 1:");
+  scanf ("%f", &nota1);
+  printf ("\nDigite Peso 1:");
+  scanf ("%f", &peso1);
+  printf ("\nDidite Nota 2:");
+  scanf ("%f", &nota2);
+  printf ("\nDidite Peso 2:");
+  scanf ("%f", &peso2);
+  printf ("\nDigite Nota 3:");
+  scanf ("%f", &nota3);
+  printf ("\nDigite Peso 3:");
+  scanf ("%f", &peso3);
+
+  media =
+    (nota1 * peso1 + nota2 * peso2 + nota3 * peso3) / (peso1 + peso2 + peso3);
+
+  printf ("\n A Média Ponderada é: : %.2f", media);
+
+
+}
