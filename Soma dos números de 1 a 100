@@ -1,0 +1,19 @@
+
+#include <stdio.h>
+//calcular soma dos números de 1 a 100 usando o while
+int main()
+{
+    int contador =1;
+    int soma=0;
+    
+    
+    while(contador<=100){
+    soma=soma+contador;
+    contador++;
+        
+    }   
+    
+    printf("\n%i",soma);
+         
+    return 0;
+}
