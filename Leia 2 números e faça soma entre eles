@@ -1,0 +1,23 @@
+#include <stdio.h>
+//Leia os 2 números e imprima a soma dos números entre eles
+//O primeiro número informado sempre será menor que o segundo
+
+int main()
+{
+    int numero1;
+    int numero2;
+    int soma;
+    
+    printf("Informe o número1:  ");
+    scanf("%i",&numero1);
+    printf("Informe o número2:  ");
+    scanf("%i",&numero2);
+    
+    for(int i = numero1; i <= numero2; i++  ){
+        soma = soma+i;
+    }
+    printf("Soma: %i",soma);
+    
+
+    return 0;
+}
