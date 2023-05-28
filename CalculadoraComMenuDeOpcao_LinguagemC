@@ -1,0 +1,73 @@
+//ESTRUTURA DE CÓDIGO BY NAARA SOUZA
+
+#include <stdio.h>
+int main()
+{
+
+    int escolha;
+    float num1, num2, resultado;
+    
+   do{ //Coloquei o DO para que seja possivél sair do programa com a opção 5.
+   
+        printf("-----------CACULADORA----------\n");
+        printf("Digite 1 para somar: \n");
+        printf("Digite 2 para subtrair: \n");
+        printf("Digite 3 para multiplicar: \n");
+        printf("Digite 4 para dividir: \n");
+        printf("Digite 5 para sair: \n");
+       
+        printf("\nDigite a sua escolha: \n");
+        scanf("%d", &escolha);
+    
+        if (escolha>=1 && escolha<5){
+        printf("Digite o Primeiro número: \n");
+        scanf("%f", &num1);
+        printf("Digite o Segundo número: \n");
+        scanf("%f", &num2);
+        }if(escolha <5 && escolha>6){
+             printf("Opção Inválida \n");
+        }if(escolha==5){
+            printf("Você escolheu sair do programa! ");
+        }
+    
+        switch (escolha){
+            
+        case 1:
+            resultado = num1 + num2;
+            printf("Resultado da soma: %.2f \n", resultado);
+            break;
+            
+        case 2:
+            resultado = num1 - num2;
+            printf("Resultado da subtracao: %.2f\n", resultado);
+            break;
+            
+        case 3:
+            resultado = num1 * num2;
+            printf("Resultado da multiplicacao:%.2f \n", resultado);
+            break;
+            
+        case 4:
+           if (num2==0){
+            printf("Nao existe divisao por zero. Digite outro numero:");
+                scanf("%f", &num2);
+            }
+            
+            resultado = num1/num2;
+            
+            printf("Resultado da divisao: %.2f\n", resultado);
+            break;
+        
+        case 5:
+            printf("SAINDO ....");
+        break;
+    
+        default:
+           printf("Valor Inválido! Escolha nova opção no Menu!\n");
+        }
+    
+    
+   } while (escolha!=5); //Essa chave está fechando o DO lá em cima (O qUe  está na linha 9), A AUXILIANDO PARA QUE SEJA POSSÍVEL SAIR DO PROGRAMA.
+    getchar();
+     return 0;
+}
