@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+//PARA CRIAR UMA FUNÇÃO QUE RECEBE TRÊS NÚMEROS E RETORNA O MAIOR DELES 
+
+int maior_numero(int n1, int n2, int n3){
+    
+    if(n1>n2 && n1>n3){
+        
+        return n1;
+    }else if(n2>n1 && n2>n3){
+        return n2;
+    }else{
+        return n3;
+    }
+    
+}
+int main()
+{
+    printf("Maior número: %i",maior_numero(10,12,15));
+    printf("\nMaior número: %i",maior_numero(27,25,15));
+     printf("\nMaior número: %i",maior_numero(12,280,75));
+    
+    return 0;
+    
+}
