@@ -1,0 +1,55 @@
+/*LER A ALTURA DE 10 PESSOAS, ARMAZENAR EM UM VETOR E NO FINAL EXIBIR AS SEGUINTES INFORMAÇÕES: 
+
+-Média das alturas;
+-Maior altura;
+-Menr altura
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    float alturas[10];
+    float media;
+    float MaiorNota;
+    float MenorNota;
+    float soma=0;
+    
+    
+    //vai de 0 até 9
+        
+        for(int indice=0; indice<10; indice++){
+         printf("Informe a altura da pessoa %i:",indice +1);
+            scanf("%f", &alturas[indice]);
+        }
+        
+        for(int indice=0; indice<10; indice++){
+        soma=soma+alturas[indice];
+        
+        if(indice == 0){
+           MaiorNota=alturas[indice];
+           MenorNota=alturas[indice];
+       
+        }else{
+            if(alturas[indice]>MaiorNota){
+                MaiorNota=alturas[indice];        
+            }
+            if(alturas[indice]<MenorNota){ //fique atenta aos sinais de maior e menor
+                MenorNota=alturas[indice];        
+                
+            }
+        }
+        
+        
+    }
+    
+    media=soma/10;
+    
+    printf("\n\nMédia: %f",media);
+    printf("\n\nMaior Altura: %f",MaiorNota);
+    printf("\n\nMenor Altura: %f",MenorNota);
+    
+    
+    return 0;
+        
+    }
